@@ -28,6 +28,7 @@ module.exports = class{
     person.setClient(client);
   }
 
+  // ??  
   getPlayerAvatar(playerId){
     if(!this.players.has(playerId)){
       return null;
