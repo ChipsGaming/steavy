@@ -29,7 +29,7 @@ loop.start(context.simulation);
 
 
 const commandsHandler = new CommandsHandler(
-  new AclManager,
+  new AclManager(['admin', 'player']),
   context.password,
   loop
 );

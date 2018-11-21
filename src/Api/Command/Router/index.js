@@ -3,5 +3,6 @@ module.exports = {
   OrRouter: require('./OrRouter'),
   CallbackRouter: require('./CallbackRouter'),
   ProtectRouter: require('./ProtectRouter'),
-  RegexRouter: require('./RegexRouter')
+  RegexRouter: require('./RegexRouter'),
+  Builder: require('./Builder')
 };
