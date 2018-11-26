@@ -8,7 +8,7 @@ module.exports = class{
   }
 
   update(delta, k){
-    for(const location of this.locations.values()){
+    for(const [_, location] of this.locations){
       location.update(delta, k);
     }
   }
@@ -35,7 +35,7 @@ module.exports = class{
     }
 
     const personId = this.players.get(playerId);
-    for(const location of this.locations.values()){
+    for(const [_, location] of this.locations){
       if(location.persons.has(personId)){
         return location.persons.get(personId);
       }
